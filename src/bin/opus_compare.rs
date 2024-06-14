@@ -6,7 +6,7 @@
 
 use clap::Parser;
 use std::str::FromStr;
-use unsafe_libopus::test::{opus_compare, CompareParams, CompareResult};
+use unopus::test::{opus_compare, CompareParams, CompareResult};
 
 #[derive(Debug, Default, Copy, Clone)]
 enum SampleRate {

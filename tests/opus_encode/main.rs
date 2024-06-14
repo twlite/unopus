@@ -82,14 +82,14 @@ pub mod test_opus_common_h {
         panic!("test failed");
     }
 
-    use unsafe_libopus::externs::memset;
-    use unsafe_libopus::externs::{free, malloc};
-    use unsafe_libopus::opus_get_version_string;
+    use unopus::externs::memset;
+    use unopus::externs::{free, malloc};
+    use unopus::opus_get_version_string;
 }
 pub use self::test_opus_common_h::{debruijn2, Rw, Rz, _test_failed, fast_rand, iseed};
-use unsafe_libopus::externs::{free, malloc};
-use unsafe_libopus::externs::{memcpy, memset};
-use unsafe_libopus::{
+use unopus::externs::{free, malloc};
+use unopus::externs::{memcpy, memset};
+use unopus::{
     opus_decode, opus_decoder_create, opus_decoder_ctl, opus_decoder_destroy,
     opus_decoder_get_size, opus_encode, opus_encoder_create, opus_encoder_ctl,
     opus_encoder_destroy, opus_encoder_get_size, opus_get_version_string, opus_multistream_decode,

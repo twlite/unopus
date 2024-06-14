@@ -36,13 +36,13 @@ pub mod test_opus_common_h {
         panic!("test failed");
     }
 
-    use unsafe_libopus::opus_get_version_string;
+    use unopus::opus_get_version_string;
 }
 pub use self::arch_h::opus_val16;
 pub use self::test_opus_common_h::{_test_failed, fast_rand};
-use unsafe_libopus::externs::memset;
-use unsafe_libopus::externs::{free, malloc};
-use unsafe_libopus::{
+use unopus::externs::memset;
+use unopus::externs::{free, malloc};
+use unopus::{
     opus_projection_ambisonics_encoder_create, opus_projection_decode,
     opus_projection_decoder_create, opus_projection_decoder_destroy, opus_projection_encode,
     opus_projection_encoder_ctl, opus_projection_encoder_destroy, OpusProjectionDecoder,

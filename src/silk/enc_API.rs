@@ -165,7 +165,7 @@ pub unsafe fn silk_Encode(
         (*psEnc).state_Fxx[1 as usize].sCmn.nFramesEncoded;
     ret = check_control_input(encControl);
     if ret != 0 {
-        // see comments in `[unsafe_libopus::silk::check_control_input]`
+        // see comments in `[unopus::silk::check_control_input]`
         panic!("libopus: assert(0) called");
         // return ret;
     }
@@ -233,7 +233,7 @@ pub unsafe fn silk_Encode(
             saved_fs_kHz: 0,
         };
         if nBlocksOf10ms != 1 {
-            // see comments in `[unsafe_libopus::silk::check_control_input]`
+            // see comments in `[unopus::silk::check_control_input]`
             panic!("libopus: assert(0) called");
             // return SILK_ENC_INPUT_INVALID_NO_OF_SAMPLES;
         }
@@ -267,7 +267,7 @@ pub unsafe fn silk_Encode(
         }
     } else {
         if nBlocksOf10ms * (*encControl).API_sampleRate != 100 * nSamplesIn || nSamplesIn < 0 {
-            // see comments in `[unsafe_libopus::silk::check_control_input]`
+            // see comments in `[unopus::silk::check_control_input]`
             panic!("libopus: assert(0) called");
             // return SILK_ENC_INPUT_INVALID_NO_OF_SAMPLES;
         }

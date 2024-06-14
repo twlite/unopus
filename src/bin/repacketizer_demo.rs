@@ -7,7 +7,7 @@
 use std::fs::File;
 use std::io::{Read, Seek, Write};
 
-use unsafe_libopus::{
+use unopus::{
     opus_repacketizer_cat, opus_repacketizer_create, opus_repacketizer_get_nb_frames,
     opus_repacketizer_init, opus_repacketizer_out, opus_repacketizer_out_range, opus_strerror,
     OpusRepacketizer,

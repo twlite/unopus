@@ -220,5 +220,5 @@ pub fn opus_strerror(error: i32) -> &'static str {
 }
 
 pub fn opus_get_version_string() -> &'static str {
-    "unsafe-libopus (rust port) 1.3.1"
+    "libopus 1.3.1"
 }

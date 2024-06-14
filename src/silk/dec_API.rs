@@ -127,7 +127,7 @@ pub unsafe fn silk_Decode(
                 (*channel_state.offset(n as isize)).nFramesPerPacket = 3;
                 (*channel_state.offset(n as isize)).nb_subfr = 4;
             } else {
-                // see comments in `[unsafe_libopus::silk::check_control_input]`
+                // see comments in `[unopus::silk::check_control_input]`
                 panic!("libopus: assert(0) called");
                 // return SILK_DEC_INVALID_FRAME_SIZE;
             }

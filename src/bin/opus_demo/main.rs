@@ -7,8 +7,8 @@
 mod cli;
 
 use crate::cli::{Backend, Cli, Mode};
-use unsafe_libopus::opus_get_version_string;
-use unsafe_libopus::test::demo::{
+use unopus::opus_get_version_string;
+use unopus::test::demo::{
     opus_demo_decode, opus_demo_encode, DecodeArgs, OpusBackend, UnsafeLibopusBackend,
     UpstreamLibopusBackend,
 };

@@ -39,7 +39,7 @@ pub trait OpusBackend {
     unsafe fn opus_decoder_destroy(&self, st: *mut Decoder);
 }
 
-mod unsafe_libopus {
+mod unopus {
     use crate::test::demo::backend::{Decoder, Encoder};
     use crate::varargs::VarArgs;
     use crate::{
@@ -119,7 +119,7 @@ mod unsafe_libopus {
         }
     }
 }
-pub use unsafe_libopus::UnsafeLibopusBackend;
+pub use unopus::UnsafeLibopusBackend;
 
 #[cfg(feature = "test-upstream-libopus")]
 mod libopus {

@@ -1,10 +1,10 @@
 [package]
-name = "unsafe-libopus"
-authors = ["DCNick3"]
-version = "0.1.1"
+name = "unopus"
+authors = ["twlite"]
+version = "0.0.1"
 edition = "2021"
 
-repository = "https://github.com/DCNick3/unsafe-libopus"
+repository = "https://github.com/twlite/unopus"
 description = "libopus transpiled to rust by c2rust"
 
 license = "BSD-3-Clause"
@@ -35,15 +35,9 @@ libc-stdhandle = "0.1.0"
 insta = "1.29.0"
 
 [features]
-test = [
-    "byteorder",
-]
-test-upstream-libopus = [
-    "audiopus_sys",
-]
-bins = [
-    "clap"
-]
+test = ["byteorder"]
+test-upstream-libopus = ["audiopus_sys"]
+bins = ["clap"]
 
 [[bin]]
 name = "opus_compare"

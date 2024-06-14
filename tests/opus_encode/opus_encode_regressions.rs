@@ -1,9 +1,9 @@
-use unsafe_libopus::{
+use unopus::{
     opus_multistream_encode, opus_multistream_encoder_create, opus_multistream_encoder_ctl,
     opus_multistream_encoder_destroy, opus_multistream_surround_encoder_create, OpusMSEncoder,
 };
 
-use unsafe_libopus::{
+use unopus::{
     opus_encode, opus_encoder_create, opus_encoder_ctl, opus_encoder_destroy, OpusEncoder,
 };
 
